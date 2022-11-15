@@ -11,5 +11,5 @@ RUN chown -hR www-data:www-data /usr/local/apache2/
 
 COPY ./app/ /usr/local/apache2/htdocs/
 
-# #Run as a   -- www-data
+# #Run as a -- www-data
 USER www-data
