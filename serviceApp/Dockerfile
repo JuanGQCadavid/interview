@@ -1,4 +1,4 @@
-FROM httpd:latest
+FROM httpd:2.4
 
 # RUN apk -q add libcap
 
@@ -11,5 +11,5 @@ FROM httpd:latest
 
 COPY ./app/ /usr/local/apache2/htdocs/
 
-#Run as a -- www-data
-USER www-data
+# #Run as a -- www-data
+# USER www-data
