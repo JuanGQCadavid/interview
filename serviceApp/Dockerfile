@@ -11,5 +11,5 @@ RUN getcap /usr/local/apache2/bin/httpd
 
 COPY ./app/ /usr/local/apache2/htdocs/
 
-#Run as a www-data
+#Run as a -- www-data
 USER www-data
