@@ -37,5 +37,10 @@ export class InfraStack extends Stack {
       containerName: "interviewcontainer",
     });
 
+    // Instantiate an Amazon ECS Service
+    const ecsService = new ecs.Ec2Service(this, 'Service', {
+      cluster,
+      taskDefinition,
+    });
   }
 }
